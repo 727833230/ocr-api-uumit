@@ -10,7 +10,7 @@ from PIL import Image
 app = FastAPI(title="OCR 文字识别 API", version="2.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
-LANG_MAP = {"zh": "chi_sim+chi_tra", "en": "eng", "auto": "chi_sim+eng"}
+LANG_MAP = {"zh": "chi_sim+chi_tra", "en": "eng", "ru": "rus", "auto": "chi_sim+eng+rus"}
 
 
 def _ocr(image_bytes: bytes, lang: str = "auto"):

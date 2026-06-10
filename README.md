@@ -1,6 +1,6 @@
 # OCR API — 图片文字识别接口
 
-基于 FastAPI + EasyOCR 的图片文字识别 API，支持中文和英文。
+基于 FastAPI + Tesseract OCR 的图片文字识别 API，支持中文、英文和俄文。
 
 ## 接口
 
